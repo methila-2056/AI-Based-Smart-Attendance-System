@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+target/
+out/
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+logs/
+
+# Misc
+*.class
+*.jar
+!target/*.jar
+hs_err_pid*
+__pycache__/
+*.pyc
+

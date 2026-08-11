@@ -1,0 +1,82 @@
+:root,
+[data-theme='light'] {
+  /* Primary & Accents */
+  --primary: #1E3A8A;
+  --primary-dark: #172554;
+  --accent: #4F46E5;
+  --accent-light: #EEF2FF;
+  
+  /* Status Colors */
+  --success: #059669;
+  --success-light: #ECFDF5;
+  --warning: #D97706;
+  --warning-light: #FFFBEB;
+  --danger: #DC2626;
+  --danger-light: #FEF2F2;
+  --info: #0284C7;
+  --info-light: #F0F9FF;
+
+  /* Surfaces & Backgrounds */
+  --bg: #F8FAFC;
+  --surface: #FFFFFF;
+  --card: #FFFFFF;
+  --surface-2: #F1F5F9;
+  --surface-3: #E2E8F0;
+  
+  /* Typography */
+  --text: #0F172A;
+  --muted: #64748B;
+  --border: #E2E8F0;
+  --border-subtle: #F1F5F9;
+
+  /* Elevation & Shadows */
+  --radius: 12px;
+  --radius-sm: 8px;
+  --radius-lg: 16px;
+  --shadow-sm: 0 1px 2px 0 rgba(15, 23, 42, 0.04);
+  --shadow: 0 1px 3px 0 rgba(15, 23, 42, 0.08), 0 1px 2px -1px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.08), 0 2px 4px -2px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.08), 0 4px 6px -4px rgba(15, 23, 42, 0.04);
+
+  /* Layout Constants */
+  --sidebar-w: 256px;
+  --sidebar-w-collapsed: 72px;
+  --header-h: 64px;
+}
+
+[data-theme='dark'] {
+  /* Primary & Accents */
+  --primary: #6366F1;
+  --primary-dark: #4F46E5;
+  --accent: #818CF8;
+  --accent-light: #1E1B4B;
+
+  /* Status Colors */
+  --success: #10B981;
+  --success-light: #064E3B;
+  --warning: #F59E0B;
+  --warning-light: #78350F;
+  --danger: #F87171;
+  --danger-light: #7F1D1D;
+  --info: #38BDF8;
+  --info-light: #0C4A6E;
+
+  /* Surfaces & Backgrounds */
+  --bg: #0B1120;
+  --surface: #111827;
+  --card: #172033;
+  --surface-2: #172033;
+  --surface-3: #1F293D;
+  
+  /* Typography */
+  --text: #F8FAFC;
+  --muted: #94A3B8;
+  --border: #263244;
+  --border-subtle: #1E293B;
+
+  /* Elevation & Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 2px -1px rgba(0, 0, 0, 0.2);
+  --shadow-md: 0 6px 12px -2px rgba(0, 0, 0, 0.4), 0 3px 6px -3px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 14px 24px -4px rgba(0, 0, 0, 0.5), 0 6px 8px -4px rgba(0, 0, 0, 0.4);
+}
