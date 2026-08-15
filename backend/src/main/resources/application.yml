@@ -2,7 +2,7 @@ spring:
   application:
     name: smart-academic-companion
   datasource:
-    url: ${DB_URL:jdbc:postgresql://ep-dark-meadow-azqfxt67.c-3.ap-southeast-1.aws.neon.tech/neondb?sslmode=require}
+    url: ${DB_URL:jdbc:postgresql://ep-lucky-dawn-az7h2ryr.c-3.ap-southeast-1.aws.neon.tech/neondb?sslmode=require}
     username: ${DB_USERNAME:neondb_owner}
     password: ${DB_PASSWORD:}
   jpa:
@@ -14,6 +14,10 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         format_sql: true
+        jdbc:
+          batch_size: 200
+        order_inserts: true
+        order_updates: true
   jackson:
     default-property-inclusion: non_null
 

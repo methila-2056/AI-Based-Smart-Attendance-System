@@ -69,6 +69,9 @@ public class ContentSeeder implements CommandLineRunner {
     private final QrTokenService qrTokenService;
     private final com.smartacademic.admin.AdminService adminService;
 
+    @jakarta.persistence.PersistenceContext
+    private jakarta.persistence.EntityManager entityManager;
+
     public ContentSeeder(SemesterRepository semesterRepository, TimetableEntryRepository timetableRepository,
                          StudentRepository studentRepository, AttendanceSessionRepository sessionRepository,
                          AttendanceRecordRepository recordRepository, AssignmentRepository assignmentRepository,
@@ -146,7 +149,12 @@ public class ContentSeeder implements CommandLineRunner {
             d = d.minusDays(1);
         }
         if (!allRecords.isEmpty()) {
-            recordRepository.saveAll(allRecords);
+            for (int i = 0; i < allRecords.size(); i += 500) {
+                int end = Math.min(i + 500, allRecords.size());
+                recordRepository.saveAll(allRecords.subList(i, end));
+                entityManager.flush();
+                entityManager.clear();
+            }
         }
     }
 
