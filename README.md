@@ -95,10 +95,14 @@ The project is fully deployed and running in production on three cloud platforms
 | --- | --- |
 | **Login** | **Admin Dashboard** |
 | ![Login](frontend/public/screenshots/login.png) | ![Admin Dashboard](frontend/public/screenshots/admin-dashboard.png) |
+| **Admin — Timetable** | **Admin — Students** |
+| ![Admin Timetable](frontend/public/screenshots/admin-timetable.png) | ![Admin Students](frontend/public/screenshots/admin-students.png) |
 | **Teacher — Class Hub** | **Student Dashboard** |
 | ![Teacher Dashboard](frontend/public/screenshots/teacher-dashboard.png) | ![Student Dashboard](frontend/public/screenshots/student-dashboard.png) |
 | **Teacher — My Classes** | **Student — Smart Study Planner** |
 | ![My Classes](frontend/public/screenshots/teacher-classes.png) | ![Smart Study Planner](frontend/public/screenshots/student-planner.png) |
+| **Coordinator — Attendance Analytics** | **Student — QR Scanner** |
+| ![Attendance Analytics](frontend/public/screenshots/analytics.png) | ![QR Scanner](frontend/public/screenshots/student-scanner.png) |
 | **Student — My Attendance** | |
 | ![My Attendance](frontend/public/screenshots/student-attendance.png) | |
 
