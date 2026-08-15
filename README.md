@@ -28,6 +28,7 @@
 - [Overview](#-overview)
 - [Live Deployments](#-live-deployments)
 - [Key Features](#-key-features)
+- [Screenshots](#-screenshots)
 - [Architecture](#-architecture)
 - [Tech Stack](#-tech-stack)
 - [Demo Accounts](#-demo-accounts)
@@ -83,6 +84,23 @@ The project is fully deployed and running in production on three cloud platforms
 5. **Role-Based Access & Security**
    - JWT-authenticated sessions with roles: `ADMIN`, `COORDINATOR`, `TEACHER`, `STUDENT`.
    - Session isolated per browser tab (`sessionStorage`) so different roles can be tested side-by-side.
+
+---
+
+## 📸 Screenshots
+
+*Live captures from the deployed application.*
+
+| | |
+| --- | --- |
+| **Login** | **Admin Dashboard** |
+| ![Login](frontend/public/screenshots/login.png) | ![Admin Dashboard](frontend/public/screenshots/admin-dashboard.png) |
+| **Teacher — Class Hub** | **Student Dashboard** |
+| ![Teacher Dashboard](frontend/public/screenshots/teacher-dashboard.png) | ![Student Dashboard](frontend/public/screenshots/student-dashboard.png) |
+| **Teacher — My Classes** | **Student — Smart Study Planner** |
+| ![My Classes](frontend/public/screenshots/teacher-classes.png) | ![Smart Study Planner](frontend/public/screenshots/student-planner.png) |
+| **Student — My Attendance** | |
+| ![My Attendance](frontend/public/screenshots/student-attendance.png) | |
 
 ---
 
