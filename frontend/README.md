@@ -1,32 +1,31 @@
-# React + TypeScript + Vite
+# Frontend — Smart Academic Companion
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+The React + TypeScript + Vite single-page application for the **AI-Based Smart Attendance System**.
 
-Currently, two official plugins are available:
+## Scripts
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+| Command | Description |
+| --- | --- |
+| `npm install` | Install dependencies |
+| `npm run dev` | Start the Vite dev server (proxies `/api` → `http://localhost:8080`) |
+| `npm run build` | Type-check with `tsc -b` and produce the production bundle in `dist/` |
+| `npm run lint` | Lint with Oxlint |
+| `npm run preview` | Preview the production build locally |
 
-## React Compiler
+## Environment
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- `VITE_API_BASE` — optional base URL for API calls. Empty in development (uses the Vite proxy); production relies on the Vercel `/api` rewrites.
 
-## Expanding the Oxlint configuration
+## Key structure
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```
+src/
+├── api/          # API client (client.ts) & typed DTOs (types.ts)
+├── auth/         # AuthContext + RequireAuth route guard
+├── components/   # Layout shells, data tables, dialogs, UI primitives
+├── pages/        # admin / analytics / student / teacher / Login
+├── styles/       # Design tokens (tokens.css) & global styles
+└── App.tsx       # React Router route definitions
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+See the [root README](../README.md) for architecture and deployment details.
