@@ -36,6 +36,7 @@
 - [Environment Variables](#-environment-variables)
 - [Deployment Guide](#-deployment-guide)
 - [Project Structure](#-project-structure)
+- [Documentation](#-documentation)
 - [License](#-license)
 
 ---
@@ -303,9 +304,22 @@ AI-Based-Smart-Attendance-System/
 │       └── styles/              # Design tokens & global CSS
 ├── run.py                       # One-command local launcher
 ├── vercel.json                  # Frontend build + /api proxy config
+├── BRD.md                       # Business Requirements Document
+├── PRD.md                       # Product Requirements Document
 ├── .env.example                 # Documented environment variables
 └── README.md
 ```
+
+---
+
+## 📄 Documentation
+
+| Document | Description |
+| --- | --- |
+| [**BRD.md**](./BRD.md) | Business Requirements Document — objectives, stakeholders, scope, business processes, KPIs |
+| [**PRD.md**](./PRD.md) | Product Requirements Document — personas, user stories, functional/NFRs, data model, API surface |
+| [**architecture_summary.md**](./architecture_summary.md) | Technical architecture & feature reference manual |
+| [**smart_academic_companion_implementation_plan.md**](./smart_academic_companion_implementation_plan.md) | Full product implementation plan |
 
 ---
 
